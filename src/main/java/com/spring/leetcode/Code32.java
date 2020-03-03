@@ -40,6 +40,19 @@ public class Code32 {
     return node;
   }
 
+  //迭代方式实现
+  public ListNode reverseList1(ListNode head){
+    ListNode preNode = null;
+    ListNode curNode = head;
+    while (curNode != null){
+      ListNode nextTemp = curNode.next;
+      curNode.next = preNode;
+      preNode = curNode;
+      curNode = nextTemp;
+    }
+    return preNode;
+  }
+
   public static void main(String[] args) {
     ListNode node1 = new ListNode(1);
     ListNode node2 = new ListNode(2);
