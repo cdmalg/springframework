@@ -5,4 +5,5 @@
 * 2020/3/4 腐烂的橘子（com.spring.leetcode.Code34）
 * 2020/3/5 分糖果（com.spring.leetcode.Code35）
 * 2020/3/6 和为s的连续正整数序列（com.spring.leetcode.Code36）
+* 2020/3/7 队列的最大值（com.spring.leetcode.Code37）
 
