@@ -6,4 +6,6 @@
 * 2020/3/5 分糖果（com.spring.leetcode.Code35）
 * 2020/3/6 和为s的连续正整数序列（com.spring.leetcode.Code36）
 * 2020/3/7 队列的最大值（com.spring.leetcode.Code37）
+* 2020/3/8 零钱兑换（com.spring.leetcode.Code38）
+* 2020/3/13 多数元素（com.spring.leetcode.Code313）
 
