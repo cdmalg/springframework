@@ -15,7 +15,6 @@ public class Code34 {
 
   // 最初想法，遍历每个橘子，如果是正常的，检查周边是否存在腐烂的橘子，存在则腐烂，将该位置记录下来，等第一波感染结束后统一替换并次数+1
   public static int orangesRotting(int[][] grid) {
-//    int[][] a = {{2, 1, 1}, {0, 1, 1}, {1, 0, 1}};
 
     // 统计总共所需次数
     int time = 0;
@@ -77,6 +76,9 @@ public class Code34 {
   }
 
   // leetcode上效率最高的方案
+  // 解题思路：
+  // 第一遍循环利用递归方式将橘子按时间顺序全部腐烂，并用腐烂值来区分先后顺序
+  // 第二遍循环所有橘子，如果存在未腐烂的橘子，返回-1，不存在则去最大腐烂值-2为腐烂时间
   public int orangesRotting1(int[][] grid) {
     boolean has2 = false;
     for (int i = 0; i < grid.length; i++) {//第一次遍历，对每个初始腐烂橘子进行dfs

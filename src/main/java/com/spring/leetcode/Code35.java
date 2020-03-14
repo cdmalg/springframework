@@ -34,7 +34,7 @@ public class Code35 {
     return ans;
   }
 
-  // 上一方法改进版
+  // 上一方法改进版，利用取余来获取ans下标
   public int[] distributeCandiesPro(int candies, int num_people) {
     int[] ans = new int[num_people];
     int i = 0;

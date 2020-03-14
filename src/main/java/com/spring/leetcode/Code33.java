@@ -27,7 +27,7 @@ public class Code33 {
   // 网上效率较高的方案，理解起来比较繁琐
   public static void merge1(int[] A, int m, int[] B, int n) {
     if (m >= 0) {
-      // 先将A数组从第n位开始,复制m位(即A数组全部)到后面，[1,2,3,0,0,0] --> [1,2,3,1,2,3]
+      // 先将A数组从第n位开始,复制m位到后面(即先将A右移到末尾)，[1,2,3,0,0,0] --> [1,2,3,1,2,3]
       System.arraycopy(A, 0, A, n, m);
     }
 
@@ -50,6 +50,21 @@ public class Code33 {
       A[k++] = B[j++];
     }
     //PS:因为while (i < (m + n) && j < n)限制，后两个while方法只有一个可以进入。
+  }
+
+  public void mergePro(int[] A, int m, int[] B, int n) {
+    // 先确保将其中一个数组中的数字遍历完
+    while (m > 0 && n > 0) {
+      // 对比选出较大的数放在 m + n - 1 的位置，并将选出此数的指针向前移动
+      A[m + n - 1] = A[m - 1] > B[n - 1] ? A[m-- - 1] : B[n-- - 1];
+    }
+    // 剩下的数都比已经遍历过的数小
+    // 如果 m 不为 0，则 A 没遍历完，都已经在 A 中不用再管
+    // 如果 n 不为 0，则 B 没遍历完，直接全移到 A 中相同的位置
+    while (n > 0) {
+      A[n - 1] = B[n - 1];
+      n--;
+    }
   }
 
   public static void main(String[] args) {
