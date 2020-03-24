@@ -1,6 +1,8 @@
 package com.spring.leetcode;
 
 
+import com.spring.leetcode.util.ListNode;
+
 /**
  * 反转一个单链表。
  *

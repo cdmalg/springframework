@@ -1,6 +1,6 @@
 package com.spring.leetcode;
 
-import com.alibaba.fastjson.JSON;
+import com.spring.leetcode.util.ListNode;
 
 /**
  * 链表的中间节点
