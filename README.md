@@ -22,3 +22,4 @@
 * 2020/3/25 三维形体的表面积（com.spring.leetcode.Code325）
 * 2020/3/26 电脑坏了，请假一天
 * 2020/3/27 卡牌分组（com.spring.leetcode.Code327）
+* 2024/12/16  进行操作使字符串为空（com.spring.leetcode.Code1216)
